@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-app';
+
+  model = {
+    left: true,
+    middle: false,
+    right: false
+  };
 }

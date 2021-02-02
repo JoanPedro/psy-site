@@ -1,1 +1,24 @@
 <p>main-home-component works!</p>
+<div class="container">
+  <div class="row">
+    <div class="col-8">
+      <table class="table table-striped">
+        <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Url</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let pokemon of pokemonResult; index as i">
+          <td>{{ pokemon.name }}</td>
+          <td> <a href="{{pokemon.url}}"> {{ pokemon.url }} </a></td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-4">
+      Tchau
+    </div>
+  </div>
+</div>

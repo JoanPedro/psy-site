@@ -5,33 +5,64 @@
   background-color: rgb(var(--blackColor));
 }
 
-.ImageSectionContent {
+.ImageSectionContent-115 {
   height: calc(var(--headerWidth) * 1.15);
 }
 
-.DataSectionContent {
-  background-color: rgb(var(--color_3));
+.ImageSectionContent-075 {
+  height: calc(var(--headerWidth) * 0.75);
+}
+
+.DataSectionContent-115 {
   height: calc(var(--headerWidth) * 1.15);
+}
+
+.DataSectionContent-075 {
+  height: calc(var(--headerWidth) * 0.75);
+}
+
+.DataSectionContentColorBrown {
+  background-color: rgb(var(--color_3));
+}
+
+.DataSectionContentColorBrownBlur {
+  background-color: rgb(var(--color_3), 0.1);
+}
+
+.BaseFont5 {
+  font: var(--font_5);
+}
+
+.BaseFont9 {
+  font: var(--font_9);
+}
+
+.BaseFont10 {
+  font: var(--font_10);
 }
 
 .BaseDataTitle {
-  font: var(--font_5);
   margin: var(--dataContentMargin);
 }
 
 .BaseDataSubtitle {
-  font: var(--font_9);
   margin: var(--dataContentMargin);
 }
 
 .BaseDataDescription {
-  font: var(--font_10);
   margin: var(--dataContentMarginDescriber);
   padding: var(--dataContentPadding);
+}
+
+.BaseTextAlignCenter {
   text-align: center;
 }
 
-#ImageSectionContentParallax {
+.BaseTextAlignLeft {
+  text-align: left;
+}
+
+#ImageSectionContentParallaxOne {
   background-image: url("../../../assets/TeraphyImg.jpg");
   width: 100%;
   height: 100%;
@@ -40,4 +71,19 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+#ImageSectionContentParallaxTwo {
+  background-image: url("../../../assets/TeraphyImg2.jpg");
+  width: 100%;
+  height: 100%;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#ContentSeparator {
+  margin: 64px 0px;
 }

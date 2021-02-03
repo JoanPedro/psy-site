@@ -15,6 +15,9 @@ export class MainHomeComponentComponent implements OnInit {
   public dataTitle: string;
   public dataSubtitle: string;
 
+  public dataAuthorDescritive: string;
+  public dataAuthorName: string;
+
   ngOnInit(): void {
     const title: string = "PSICÓLOGO";
     const subTitle: string = "Um(a) Psicólogo(a) para orientá-lo";
@@ -26,9 +29,18 @@ export class MainHomeComponentComponent implements OnInit {
       jornada de cura e auto-descoberta.
     `;
 
+    const dataAuthorName: string = "Nathaniel Lambert";
+    const authorDescritive: string = `
+      "Discutir experiências positivas leva a um aumento do bem-estar, aumento da
+      satisfação geral da vida e melhora o nível de energia"
+    `;
+
     this.setDataTitle(title);
     this.setDataSubTitle(subTitle);
     this.setDataDescritive(data);
+
+    this.setDataAuthorName(dataAuthorName);
+    this.setDataAuthorDescritive(authorDescritive);
 
     /*
     this.httpClientService.getPokemon("https://pokeapi.co/api/v2/pokemon")
@@ -40,7 +52,7 @@ export class MainHomeComponentComponent implements OnInit {
   }
 
   public getParallaxImageUrl: () => String = () => {
-    return "url('../../../assets/TeraphyImg.jpg')";
+    return "../../../assets/TeraphyImg.jpg";
   }
 
   private setDataDescritive: (value: string) => void = (value: string) => {
@@ -55,4 +67,11 @@ export class MainHomeComponentComponent implements OnInit {
     this.dataSubtitle = value;
   }
 
+  private setDataAuthorDescritive: (value: string) => void = (value: string) => {
+    this.dataAuthorDescritive = value;
+  }
+
+  private setDataAuthorName: (value: string) => void = (value: string) => {
+    this.dataAuthorName = value;
+  }
 }

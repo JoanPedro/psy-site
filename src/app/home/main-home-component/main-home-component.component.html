@@ -60,14 +60,32 @@
         <p class = "BaseFontColor BaseFont11 BaseTextAlignCenter BaseDataSubtitle2x">{{ dataAboutTelephone }}</p>
       </div>
       <div class = "col-6 px-0 ImageSectionContent-075">
-        <div appParallax [ratio]="0.5" id = "ImageSectionContentParallaxTwo"></div>
+        <img id = "ContactUsImg" [src]="getStaticImageUrl()" alt="Please, contact us!">
       </div>
     </div>
     <div class="col-12">
       <iframe id = "MainMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6537.851805241036!2d-38.53246208140304!3d-13.008270443954949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x716038285844f45%3A0x123db8b55534402e!2sFarol%20da%20Barra%20-%20Forte%20de%20Santo%20Ant%C3%B4nio%20da%20Barra!5e0!3m2!1spt-BR!2sbr!4v1612370091242!5m2!1spt-BR!2sbr" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </div>
 
+    <div id = "ContentSeparator"></div>
 
-
+    <div id="FooterSection" class="col-12 BaseFlexBoxFlexCenterColumn">
+      <div id = "MenuFooter" class="col-12 BaseFlexBoxFlexCenterRow">
+        <ul>
+          <li>
+            <a class="bi bi-facebook" style="color: white; font-size: 0.83333rem;" href="#"></a>
+          </li>
+          <li>
+            <a class="bi bi-linkedin" style="color: white; font-size: 0.83333rem;" href="#"></a>
+          </li>
+          <li>
+            <a class="bi bi-twitter" style="color: white; font-size: 0.83333rem;" href="#"></a>
+          </li>
+        </ul>
+      </div>
+      <div id = "Copyright" class="col-12 BaseFlexBoxFlexCenterRow">
+        <p class = "BaseFontColor BaseFont11">©2021 por Psicólogo. Orgulhosamente criado pela <b style="color: rgb(255, 0, 0, 0.333)">@</b><a href="#">PathTech</a></p>
+      </div>
+    </div>
   </section>
 </div>

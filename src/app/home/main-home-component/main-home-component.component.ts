@@ -35,19 +35,19 @@ export class MainHomeComponentComponent implements OnInit {
   }[] = [
     {
       title: 'Terapia Particular',
-      imageUrl: 'assets/TeraphyImg.jpg',
+      imageUrl: 'assets/TeraphyImg4.jpg',
       hour: '1 h',
       price: 'R$ 49.99',
     },
     {
       title: 'Consulta Psiquiátrica',
-      imageUrl: 'assets/TeraphyImg.jpg',
+      imageUrl: 'assets/TeraphyImg5.jpg',
       hour: '1.5 h',
       price: 'R$ 89.99',
     },
     {
       title: 'Terapia de Casal',
-      imageUrl: 'assets/TeraphyImg.jpg',
+      imageUrl: 'assets/TeraphyImg6.jpg',
       hour: '2 h',
       price: 'R$ 129.99',
     }
@@ -113,7 +113,7 @@ export class MainHomeComponentComponent implements OnInit {
   }
 
   public getStaticImageUrl: () => String = () => {
-    return "../../../assets/TeraphyImg2.jpg";
+    return "assets/TeraphyImg7.jpg";
   }
 
   private setDataDescritive: (value: string) => void = (value: string) => {

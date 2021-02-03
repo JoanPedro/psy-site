@@ -1,13 +1,22 @@
-<div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12">
 
-  <div>
-    <a routerLink = "/inicio" routerLinkActivate = "active" class = "item">Início</a>
-    <a routerLink = "/agenda" routerLinkActivate = "active" class = "item">Agenda Online</a>
-    <a routerLink = "/blog" routerLinkActivate = "active" class = "item">Blog</a>
+      <div id = "HeaderContent" class="BaseFlexBoxSpaceBetween">
+        <div id = "HeaderNameContent" class="BaseFlexBoxFlexStart">
+          <p class="BaseFontColor BaseFontSize">PSICÓLOGO</p>
+        </div>
+
+        <div id = "HeaderNavBar" class="BaseFlexBoxFlexEnd">
+          <a routerLink = "/inicio" routerLinkActivate = "active" class = "item BaseNavBarFontSize">Início</a>
+          <a routerLink = "/agenda" routerLinkActivate = "active" class = "item BaseNavBarFontSize">Agenda Online</a>
+          <a routerLink = "/blog" routerLinkActivate = "active" class = "item BaseNavBarFontSize">Blog</a>
+        </div>
+      </div>
+
+    </div>
   </div>
 
-<div>
   <router-outlet></router-outlet>
-</div>
 
 </div>

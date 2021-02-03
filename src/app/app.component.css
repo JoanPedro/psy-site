@@ -1,1 +1,28 @@
+#HeaderContent {
+  width: var(--maxViewportSize);
+  height: var(--headerHeight);
+  background-color: rgb(var(--blackColor));
+}
 
+#HeaderNameContent {
+  width: calc(var(--headerWidth) * var(--size-divisor));
+  padding: var(--sitePadding);
+  height: var(--headerHeight);
+}
+
+#HeaderNameContent p:hover {
+  color: rgb(var(--witheColor), 0.85);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#HeaderNavBar {
+  width: calc(var(--headerWidth) * var(--size-divisor));
+  padding: var(--sitePadding);
+  height: var(--headerHeight);
+}
+
+.BaseNavBarFontSize {
+  font: var(--font_11);
+  padding: var(--navBarPadding);
+}

@@ -1,24 +1,12 @@
-<p>main-home-component works!</p>
-<div class="container">
-  <div class="row">
-    <div class="col-8">
-      <table class="table table-striped">
-        <thead>
-        <tr>
-          <th scope="col">Name</th>
-          <th scope="col">Url</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr *ngFor="let pokemon of pokemonResult; index as i">
-          <td>{{ pokemon.name }}</td>
-          <td> <a href="{{pokemon.url}}"> {{ pokemon.url }} </a></td>
-        </tr>
-        </tbody>
-      </table>
+<div id = "HomeContent" class = "row">
+  <div class="col-12 BaseFlexBoxFlexCenterRow">
+    <div class = "col-6 px-0 DataSectionContent BaseFlexBoxFlexCenterColumn">
+      <h1 class = "BaseFontColor BaseDataTitle">{{ dataTitle }}</h1>
+      <h2 class = "BaseFontColor BaseDataSubtitle">{{ dataSubtitle }}</h2>
+      <h3 class = "BaseFontColor BaseDataDescription"> {{ dataDescritive }} </h3>
     </div>
-    <div class="col-4">
-      Tchau
+    <div class = "col-6 px-0 ImageSectionContent">
+      <div appParallax [ratio]="-0.2" id = "ImageSectionContentParallax"></div>
     </div>
   </div>
 </div>

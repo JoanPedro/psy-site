@@ -1,0 +1,43 @@
+#HomeContent {
+  padding: var(--sitePadding);
+  width: var(--maxViewportSize);
+  height: var(--headerHeight);
+  background-color: rgb(var(--blackColor));
+}
+
+.ImageSectionContent {
+  height: calc(var(--headerWidth) * 1.15);
+}
+
+.DataSectionContent {
+  background-color: rgb(var(--color_3));
+  height: calc(var(--headerWidth) * 1.15);
+}
+
+.BaseDataTitle {
+  font: var(--font_5);
+  margin: var(--dataContentMargin);
+}
+
+.BaseDataSubtitle {
+  font: var(--font_9);
+  margin: var(--dataContentMargin);
+}
+
+.BaseDataDescription {
+  font: var(--font_10);
+  margin: var(--dataContentMarginDescriber);
+  padding: var(--dataContentPadding);
+  text-align: center;
+}
+
+#ImageSectionContentParallax {
+  background-image: url("../../../assets/TeraphyImg.jpg");
+  width: 100%;
+  height: 100%;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

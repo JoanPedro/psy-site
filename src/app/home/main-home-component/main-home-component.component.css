@@ -13,6 +13,10 @@
   height: calc(var(--headerWidth) * 0.75);
 }
 
+.DataSectionContent-145 {
+  height: calc(var(--headerWidth) * 1.45);
+}
+
 .DataSectionContent-115 {
   height: calc(var(--headerWidth) * 1.15);
 }
@@ -29,37 +33,8 @@
   background-color: rgb(var(--color_3), 0.1);
 }
 
-.BaseFont5 {
-  font: var(--font_5);
-}
-
-.BaseFont9 {
-  font: var(--font_9);
-}
-
-.BaseFont10 {
-  font: var(--font_10);
-}
-
 .BaseDataTitle {
   margin: var(--dataContentMargin);
-}
-
-.BaseDataSubtitle {
-  margin: var(--dataContentMargin);
-}
-
-.BaseDataDescription {
-  margin: var(--dataContentMarginDescriber);
-  padding: var(--dataContentPadding);
-}
-
-.BaseTextAlignCenter {
-  text-align: center;
-}
-
-.BaseTextAlignLeft {
-  text-align: left;
 }
 
 #ImageSectionContentParallaxOne {
@@ -84,6 +59,32 @@
   background-size: cover;
 }
 
+#ImageSectionStatic {
+  width: 100%;
+  height: 100%;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#ImageSectionContentParallaxThree {
+  background-image: url("../../../assets/TeraphyImg3.jpg");
+  width: 100%;
+  height: 100%;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 #ContentSeparator {
   margin: 64px 0px;
+}
+
+#MainMap {
+  width: 100%;
+  height: 240px;
 }

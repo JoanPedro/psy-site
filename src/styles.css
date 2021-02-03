@@ -40,10 +40,7 @@
   --font_2: normal normal normal 28px/1.375em raleway, sans-serif;
   --font_3: normal normal normal 88px/1.2em raleway, sans-serif;
   --font_4: normal normal normal 72px/1.25em raleway, sans-serif;
-  --font_6: normal normal normal 40px/1.35em raleway, sans-serif;
   --font_7: normal normal normal 20px/1.67em avenir-lt-w01_35-light1475496,
-    sans-serif;
-  --font_8: normal normal normal 18px/1.75em avenir-lt-w01_35-light1475496,
     sans-serif;
   --wix-ads-height: 50px;
   --wix-ads-top-height: 50px;
@@ -65,6 +62,7 @@
   --dataContentMarginDescriber: 12px 78px;
 
   --font_5: normal normal normal 50px/1.34em raleway, sans-serif;
+  --font_6: normal normal normal 40px/1.35em raleway, sans-serif;
   --font_8: normal normal normal 18px/1.79em avenir-lt-w01_35-light1475496,
     sans-serif;
   --font_9: normal normal normal 15px/1.875em avenir-lt-w01_35-light1475496,
@@ -78,8 +76,37 @@
 .BaseFontSize {
   font: var(--font_8);
 }
+
 .BaseFontColor {
   color: rgb(var(--witheColor));
+}
+
+.BaseFont5 {
+  font: var(--font_5);
+}
+
+.BaseFont6 {
+  font: var(--font_6);
+}
+
+.BaseFont0 {
+  font: var(--font_0);
+}
+
+.BaseFont9 {
+  font: var(--font_9);
+}
+
+.BaseFont8 {
+  font: var(--font_10);
+}
+
+.BaseFont10 {
+  font: var(--font_10);
+}
+
+.BaseFont11 {
+  font: var(--font_10);
 }
 
 .BaseFlexBoxSpaceBetween {
@@ -87,6 +114,10 @@
   align-items: center;
   align-content: center;
   justify-content: space-between;
+}
+
+.BaseFlexDirection {
+  flex-direction: row;
 }
 
 .BaseFlexBoxFlexStart {
@@ -119,6 +150,27 @@
   justify-content: center;
 }
 
+.BaseColorBlack {
+  color: rgb(var(--blackColor));
+}
+
+.BaseDataSubtitle2x {
+  margin: calc(var(--dataContentMargin) * 4);
+}
+
+.BaseDataDescription {
+  margin: var(--dataContentMarginDescriber);
+  padding: var(--dataContentPadding);
+}
+
+.BaseTextAlignCenter {
+  text-align: center;
+}
+
+.BaseTextAlignLeft {
+  text-align: left;
+}
+
 p {
   margin: 0px !important;
   padding: 0px !important;
@@ -138,6 +190,8 @@ a:hover {
 body {
   overflow-x: hidden;
   background-color: rgb(var(--blackColor));
+  position: relative;
+  width: 100%;
 }
 
 @media only screen and (max-width: 576px) {
@@ -147,6 +201,7 @@ body {
     --dataContentMargin: 8px 0px;
     --dataContentMarginDescriber: 8px 12px;
     --font_5: normal normal normal 24px/1.34em raleway, sans-serif;
+    --font_6: normal normal normal 16px/1.35em raleway, sans-serif;
     --font_8: normal normal normal 10px/1.79em avenir-lt-w01_35-light1475496,
       sans-serif;
     --font_9: normal normal normal 8px/1.875em avenir-lt-w01_35-light1475496,
@@ -155,6 +210,10 @@ body {
       sans-serif;
     --font_11: normal normal normal 8px/1.79em avenir-lt-w01_35-light1475496,
       sans-serif;
+  }
+
+  .CardContent {
+    margin-bottom: 24px;
   }
 }
 
@@ -165,6 +224,7 @@ body {
     --dataContentMargin: 4px 0px;
     --dataContentMarginDescriber: 4px 32px;
     --font_5: normal normal normal 42px/1.34em raleway, sans-serif;
+    --font_6: normal normal normal 34px/1.35em raleway, sans-serif;
     --font_8: normal normal normal 12px/1.79em avenir-lt-w01_35-light1475496,
       sans-serif;
     --font_9: normal normal normal 12px/1.875em avenir-lt-w01_35-light1475496,
@@ -173,6 +233,10 @@ body {
       sans-serif;
     --font_11: normal normal normal 10px/1.79em avenir-lt-w01_35-light1475496,
       sans-serif;
+  }
+
+  .CardContent {
+    margin: 12px;
   }
 }
 
@@ -183,6 +247,7 @@ body {
     --dataContentMargin: 6px 0px;
     --dataContentMarginDescriber: 6px 62px;
     --font_5: normal normal normal 38px/1.34em raleway, sans-serif;
+    --font_6: normal normal normal 30px/1.35em raleway, sans-serif;
     --font_8: normal normal normal 14px/1.79em avenir-lt-w01_35-light1475496,
       sans-serif;
     --font_9: normal normal normal 14px/1.875em avenir-lt-w01_35-light1475496,
@@ -191,6 +256,10 @@ body {
       sans-serif;
     --font_11: normal normal normal 10px/1.79em avenir-lt-w01_35-light1475496,
       sans-serif;
+  }
+
+  .CardContent {
+    margin: 16px;
   }
 }
 
@@ -201,6 +270,7 @@ body {
     --dataContentMargin: 6px 0px;
     --dataContentMarginDescriber: 6px 62px;
     --font_5: normal normal normal 40px/1.34em raleway, sans-serif;
+    --font_6: normal normal normal 32px/1.35em raleway, sans-serif;
     --font_8: normal normal normal 16px/1.79em avenir-lt-w01_35-light1475496,
       sans-serif;
     --font_9: normal normal normal 14px/1.875em avenir-lt-w01_35-light1475496,
@@ -210,11 +280,22 @@ body {
     --font_11: normal normal normal 10px/1.79em avenir-lt-w01_35-light1475496,
       sans-serif;
   }
+
+  .CardContent {
+    margin: 24px;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
   :root {
     --size-divisor: 0.8333;
     --sitePadding: 0px 60px;
+  }
+}
+
+@media only screen and (max-width: 1220px) {
+  .BaseFlexDirection {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }

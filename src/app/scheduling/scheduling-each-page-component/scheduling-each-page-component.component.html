@@ -1,0 +1,53 @@
+<div id="ScheduleEachPageContent" class="row">
+  <section>
+    <div id="ImageContent" class = "col-12 px-0">
+      <img src="{{ otherImageUrl }}" alt="Image" width = "100%" height = "360">
+    </div>
+
+    <div id="MainContent" class = "BaseFlexBoxFlexCenterRow">
+      <div id="MainContentDisplay" class = "col-xl-4 col-lg-6 col-md-8 col-sm-10">
+        <div id="DataContent" class = "BaseFlexBoxFlexCenterLeft">
+          <div id="MainContentTitle"><p class = "BlackFontColor BaseFont1">{{ mainContentTitle }}</p></div>
+          <ul class = "Price">
+            <li class = "Price BlackFontColor BaseFont9">{{ mainContentBaseHour }}</li>
+            <li class = "Price BlackFontColor BaseFont9">{{ mainContentBasePrice }}</li>
+          </ul>
+          <div id = "ScheduleButton">
+            <button type="button" class="btn btn-secondary btn-sm">Agendar já</button>
+          </div>
+        </div>
+
+        <div id="DescriptionContent" class = "BaseFlexBoxFlexCenterLeft">
+          <div id="DescriptionContentTitle"><p class = "BlackFontColor BaseFont7">Descrição do serviço</p></div>
+          <div id="DescriptionContentDescription"><p class = "BlackFontColor BaseFont8" style="text-align: justify;">{{ descriptionContentServiceDescription }}</p></div>
+        </div>
+
+        <div id="AboutContactInformationContent" class = "BaseFlexBoxFlexCenterLeft">
+          <div id="AboutContactInformationContentTitle"><p class = "BlackFontColor BaseFont7">Informações de contato</p></div>
+          <div id="AboutContactInformationContentDescription"><p class = "BlackFontColor BaseFont8" style="text-align: justify;">{{ aboutContactInformationEmailDescription }}</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div id = "ContentSeparator"></div>
+
+    <div id="FooterSection" class="col-12 BaseFlexBoxFlexCenterColumn">
+      <div id = "MenuFooter" class="col-12 BaseFlexBoxFlexCenterRow">
+        <ul>
+          <li>
+            <a class="bi bi-facebook" style="color: white; font-size: 0.83333rem;" href="#"></a>
+          </li>
+          <li>
+            <a class="bi bi-linkedin" style="color: white; font-size: 0.83333rem;" href="#"></a>
+          </li>
+          <li>
+            <a class="bi bi-twitter" style="color: white; font-size: 0.83333rem;" href="#"></a>
+          </li>
+        </ul>
+      </div>
+      <div id = "Copyright" class="col-12 BaseFlexBoxFlexCenterRow">
+        <p class = "BaseFontColor BaseFont11">©2021 por Psicólogo. Orgulhosamente criado pela <b style="color: rgb(255, 0, 0, 0.333)">@</b><a href="#">PathTech</a></p>
+      </div>
+    </div>
+  </section>
+</div>

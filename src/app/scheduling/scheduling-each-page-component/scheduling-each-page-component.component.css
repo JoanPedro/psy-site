@@ -1,0 +1,48 @@
+img {
+  width: 100%;
+  height: auto;
+}
+
+ul.Price {
+  display: inline;
+  padding-top: 32px;
+  padding-bottom: 12px;
+  padding-inline-start: 0px;
+}
+
+li.Price {
+  display: inline;
+  padding: 8px;
+  border: 1px solid rgb(var(--color_8), 0.35);
+}
+
+#MainContent {
+  width: 100%;
+  height: 500px;
+  background-color: rgb(var(--witheColor));
+}
+
+#MainContentDisplay {
+  width: 100%;
+  height: 100%;
+}
+
+#DataContent,
+#DescriptionContent {
+  border-bottom: 1px solid rgb(var(--color_8), 0.5);
+}
+
+#ScheduleButton,
+#DescriptionContentDescription {
+  padding-bottom: 24px;
+}
+
+#DescriptionContentTitle,
+#AboutContactInformationContentTitle {
+  padding-top: 24px;
+  padding-bottom: 10px;
+}
+
+#MainContentTitle {
+  padding-top: 48px;
+}

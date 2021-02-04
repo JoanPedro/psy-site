@@ -80,22 +80,9 @@
   background-size: cover;
 }
 
-#ContentSeparator {
-  margin: 64px 0px;
-}
-
 #MainMap {
   width: 100%;
   height: 240px;
-}
-
-#MenuFooter ul {
-  list-style: none;
-}
-
-#MenuFooter li {
-  display: inline;
-  margin: 6px;
 }
 
 img#ContactUsImg {

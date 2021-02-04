@@ -82,16 +82,24 @@
   color: rgb(var(--witheColor));
 }
 
+.BlackFontColor {
+  color: rgb(var(--blackColor));
+}
+
+.BaseFont0 {
+  font: var(--font_0);
+}
+
+.BaseFont1 {
+  font: var(--font_2);
+}
+
 .BaseFont5 {
   font: var(--font_5);
 }
 
 .BaseFont6 {
   font: var(--font_6);
-}
-
-.BaseFont0 {
-  font: var(--font_0);
 }
 
 .BaseFont9 {
@@ -143,6 +151,14 @@
   justify-content: center;
 }
 
+.BaseFlexBoxFlexCenterLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  align-content: center;
+  justify-content: center;
+}
+
 .BaseFlexBoxFlexCenterRow {
   display: flex;
   flex-direction: row;
@@ -186,6 +202,20 @@ a:hover {
   color: rgb(var(--witheColor), 0.85);
   text-decoration: none;
   cursor: pointer;
+}
+
+#ContentSeparator {
+  margin: 64px 0px;
+}
+
+#MenuFooter ul {
+  list-style: none;
+  padding-inline-start: 0px;
+}
+
+#MenuFooter li {
+  display: inline;
+  margin: 6px;
 }
 
 body {

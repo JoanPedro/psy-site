@@ -37,7 +37,7 @@
 
     <div id = "ContentSeparator"></div>
 
-    <div id="FourthSection" class = "col-12 ">
+    <div id="FourthSection" class = "col-12">
       <div class="col-12 px-0 BaseFlexBoxSpaceBetween BaseFlexDirection">
         <app-home-card-component
         *ngFor="let post of posts"
@@ -46,6 +46,13 @@
         [imageUrl]="post.imageUrl"
         [hour]="post.hour"
         [price]="post.price"
+        [otherImageUrl]="post.otherImageUrl"
+        [mainContentTitle]="post.mainContentTitle"
+        [mainContentBaseHour]="post.mainContentBaseHour"
+        [mainContentBasePrice]="post.mainContentBasePrice"
+        [descriptionContentServiceDescription]="post.descriptionContentServiceDescription"
+        [aboutContactInformationEmailDescription]="post.aboutContactInformationEmailDescription"
+        [detailUrl]="post.detailUrl"
       > </app-home-card-component>
       </div>
     </div>

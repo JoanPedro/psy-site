@@ -27,29 +27,63 @@ export class MainHomeComponentComponent implements OnInit {
   public dataAboutEmail: string;
   public dataAboutTelephone: string;
 
-  public posts: {
-    title: string;
-    imageUrl: string;
-    hour: string;
-    price: string;
-  }[] = [
+  public posts = [
     {
       title: 'Terapia Particular',
       imageUrl: 'assets/TeraphyImg4.jpg',
       hour: '1 h',
       price: 'R$ 49.99',
+      otherImageUrl: 'assets/TeraphyImg4_Focus.jpg',
+      mainContentTitle: 'Terapia particular',
+      mainContentBaseHour: '1 h',
+      mainContentBasePrice: 'R$ 49.99',
+      descriptionContentServiceDescription: `
+        Sentindo-se um pouco para baixo ultimamente e nada parece melhorar sua disposição?
+        Pode ser hora de procurar ajuda de um profissional licenciado.
+        Minhas sessões de Terapia particular ajudam os pacientes a desenvolverem atitudes
+        positivas em relação às circunstâncias mais complexas e desafiadoras da vida.
+        Entre em contato comigo e deixe eu ajudar você a encontrar o melhor de si mesmo.
+      `,
+      aboutContactInformationEmailDescription: '165032@gmail.com',
+      detailUrl: 'agenda/1'
     },
     {
       title: 'Consulta Psiquiátrica',
       imageUrl: 'assets/TeraphyImg5.jpg',
       hour: '1.5 h',
       price: 'R$ 89.99',
+      otherImageUrl: 'assets/TeraphyImg5_Focus.jpg',
+      mainContentTitle: 'Consulta Psiquiátrica',
+      mainContentBaseHour: '1.5 h',
+      mainContentBasePrice: 'R$ 89.99',
+      descriptionContentServiceDescription: `
+        Nas minhas sessões de terapia, trabalharemos juntos para resolver problemas
+        atuais e focar nos pensamentos e nos comportamentos positivos. Vou ajudar a
+        elaborar suas reações e fornecerei ferramentas valiosas para lidar com os
+        obstáculos da vida. Tenho certeza de que você achará meu serviço personalizado de
+        Consulta psiquiátrica inspirador. Ligue para marcar um horário.
+      `,
+      aboutContactInformationEmailDescription: '165032@gmail.com',
+      detailUrl: 'agenda/2'
     },
     {
       title: 'Terapia de Casal',
       imageUrl: 'assets/TeraphyImg6.jpg',
       hour: '2 h',
       price: 'R$ 129.99',
+      otherImageUrl: 'assets/TeraphyImg6_Focus.jpg',
+      mainContentTitle: 'Terapia de Casal',
+      mainContentBaseHour: '2 h',
+      mainContentBasePrice: 'R$ 129.99',
+      descriptionContentServiceDescription: `
+        Se está procurando serviço de Terapia de casal de qualidade,
+        com um(a) Psicólogo(a) profissional e comprometido(a), você está no lugar certo.
+        Guio meus pacientes durante todo o processo e implemento métodos para ajudá-los a
+        estabelecer novas atitudes em relação aos assuntos mais complexos de suas vidas.
+        Entre em contato e veja o que posso fazer por você.
+      `,
+      aboutContactInformationEmailDescription: '165032@gmail.com',
+      detailUrl: 'agenda/3'
     }
   ]
 
